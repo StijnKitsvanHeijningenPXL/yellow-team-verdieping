@@ -1,0 +1,104 @@
+/* Global */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ccae05;
+  background: linear-gradient(90deg, rgb(214, 233, 7), rgb(124, 134, 29) 50%);
+}
+
+a, a:link, a:visited {
+  color: #011c30;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="button"], button {
+  background-color: #445027;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 8px 0;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/*
+Header
+*/
+header {
+  text-align: center;
+}
+
+
+
+/* Footer */
+footer {
+  bottom: 0;
+  box-sizing: border-box;
+  clear: both;
+  left: 0;
+  padding: 15px 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  color: #000000;
+  display: inline;
+}
+
+
+img[id='img-git'] {
+  height: 20px;
+  margin: 0 10px;
+  position: relative;
+  top: 5px;
+  width: auto;
+}
+
+
+/* Global*/
+@media screen and (max-height: 1400px), (max-width: 500px) {
+  main {
+    margin-bottom: 125px;
+  }
+
+  footer {
+    background-color: #ebf3e0;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-height: 900px), (max-width: 500px) {
+  header img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) and (max-height: 900px) {
+  header img {
+    width: 50%;
+  }
+}
+
+
+/* Quizmaster and waiting room */
+@media screen and (max-width: 410px) {
+  input[id="filter-button"], input[id="filter-field"] {
+    max-width: 100%;
+  }
+}

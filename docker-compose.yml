@@ -7,6 +7,7 @@ services:
     build: ./web
     ports: 
       - "8080:80"
-    environment:
-      ASPNETCORE_URLS: "http://+"
-      ASPNETCORE_ENVIRONMENT: "Development"
+  web2:
+    build: ./web2
+    ports:
+      - "3500:80"

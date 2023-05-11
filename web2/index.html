@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/index.css">
+  <title>Security | Login</title>
+</head>
+
+<body>
+  <header>
+  <h1>Security Yellow Team</h1>
+  </header>
+
+  <main>
+    <section class="global-section">
+        <input id="login" class="button" type="button" name="login"
+               value="Login" title="Klik hier om in te loggen">
+               <input id="logout" class="button" type="button" name="logout"
+               value="Logout" title="Klik hier om uit te loggen" style="display:none;">
+        <hr>
+        <div id="profile"></div>
+        <span id="maarten" style="display:none;">Maarten lust geen spruitjes</span>
+
+        <input class="button" type="button" style="display:none;" id="callApi" value="Get KRC Genk API Info">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Security 2022-2023 Yellow Team</p>
+    <p>|</p>
+    <a title="Klik hier om naar de GitHub pagina van het project te gaan"
+       target="_blank" href="https://github.com/StijnKitsvanHeijningenPXL/yellow-team-verdieping"><img
+       id="img-git" src="assets/git_logo.png" alt="Git project link"></a>
+  </footer>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
