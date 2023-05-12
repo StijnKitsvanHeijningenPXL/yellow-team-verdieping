@@ -35,7 +35,7 @@ namespace api
                  options.AddPolicy(name: corsPolicy,
                  builder =>
                  {
-                     builder.WithOrigins("http://web", "http://localhost:8080", "http://localhost:8080/", "http://localhost:3500")
+                     builder.WithOrigins("http://web", "http://localhost:8080", "http://localhost:3500")
                      .AllowAnyHeader()
                      .AllowCredentials();
                  });

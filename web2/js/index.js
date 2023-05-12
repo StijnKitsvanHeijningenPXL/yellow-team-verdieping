@@ -11,6 +11,7 @@ auth0.createAuth0Client({
   authorizationParams: {
     audience:"http://localhost:5000",
     redirect_uri: window.location.origin,
+    scope:"krc-genk profile email"
   }
 }).then(async (auth0Client) => {
   // Assumes a button with id "login" in the DOM
